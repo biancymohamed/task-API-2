@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(41, 30, 128);
+    overflow-x: hidden;
+}
+
+
+body  img { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+} 
+
+
+
+
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+
+
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+} 
+
+
+
+
+
+#searchBar[type="text"] {
+    width: 100%;
+    max-width: 450px;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    color: black;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+
+
+#searchBar[type="text"]::placeholder {
+    color: #0e4d82;
+}
+
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 25px;
+    width: 250px;
+    min-height: 220px;
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+.day {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffd700;
+}
+
+.city {
+    font-size: 0.95rem;
+    color: #d1d1d1;
+}
+
+.temp {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+.card h3{
+    color: #c5c51f;
+}
+
+
+.card h2{
+color: #e0dcf3;
+} 
+
+
+.card p{
+    color: #c3c546;
+}
